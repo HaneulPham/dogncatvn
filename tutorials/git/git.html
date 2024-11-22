@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Step-by-Step Guide to Using Git in the Terminal</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0 20px;
+        }
+        h1, h2, h3 {
+            color: #333;
+        }
+        pre {
+            background-color: #f4f4f4;
+            padding: 10px;
+            border: 1px solid #ddd;
+            overflow-x: auto;
+        }
+        code {
+            background-color: #f4f4f4;
+            padding: 2px 4px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Step-by-Step Guide to Using Git in the Terminal</h1>
+    <p>Git is a powerful version control tool that helps developers track changes in their codebase and collaborate efficiently. If you are new to Git, this guide will walk you through the basic commands to get started using Git from the terminal.</p>
+
+    <h2>Step 1: Set Up Your Git Configuration</h2>
+    <p>Before you begin, configure your Git user information. This information will be attached to your commits:</p>
+    <pre><code>git config --global user.name "Your Name"
+git config --global user.email "your_email@example.com"</code></pre>
+
+    <h2>Step 2: Create a New Repository or Clone an Existing One</h2>
+    <p>You can either initialize a new repository or clone an existing one from a remote server like GitHub.</p>
+
+    <h3>Create a New Repository:</h3>
+    <ol>
+        <li><strong>Navigate</strong> to the directory where you want to create your project:</li>
+        <pre><code>cd path/to/your/project</code></pre>
+
+        <li><strong>Initialize</strong> a new Git repository:</li>
+        <pre><code>git init</code></pre>
+        <p>This command creates a new <code>.git</code> folder, enabling version control for your project.</p>
+    </ol>
+
+    <h3>Clone an Existing Repository:</h3>
+    <p>If you want to clone an existing repository from a remote server:</p>
+    <pre><code>git clone &lt;repository-url&gt;</code></pre>
+    <p>For example:</p>
+    <pre><code>git clone https://github.com/username/repository.git</code></pre>
+
+    <h2>Step 3: Add Files to the Repository</h2>
+    <p>You can add new or modified files to the Git staging area.</p>
+    <ol>
+        <li><strong>Create or modify</strong> some files in your project.</li>
+        <li>Use <code>git status</code> to check the status of your files:</li>
+        <pre><code>git status</code></pre>
+        <li><strong>Add</strong> files to the staging area:</li>
+        <pre><code>git add &lt;filename&gt;</code></pre>
+        <p>Or add all modified files:</p>
+        <pre><code>git add .</code></pre>
+    </ol>
+
+    <h2>Step 4: Commit Changes</h2>
+    <p>After staging your changes, commit them to the repository:</p>
+    <pre><code>git commit -m "Commit message describing changes"</code></pre>
+    <p>For example:</p>
+    <pre><code>git commit -m "Added new feature"</code></pre>
+
+    <h2>Step 5: Connect to a Remote Repository (Optional)</h2>
+    <p>If you haven't already cloned a repository, you can connect your local repository to a remote server (e.g., GitHub).</p>
+    <ol>
+        <li>Add the remote URL:</li>
+        <pre><code>git remote add origin &lt;repository-url&gt;</code></pre>
+        <p>For example:</p>
+        <pre><code>git remote add origin https://github.com/username/repository.git</code></pre>
+        <li><strong>Verify</strong> the remote connection:</li>
+        <pre><code>git remote -v</code></pre>
+    </ol>
+
+    <h2>Step 6: Push Changes to Remote</h2>
+    <p>To send your changes to the remote repository:</p>
+    <pre><code>git push origin main</code></pre>
+    <p>If it's your first push, you may need to set the branch:</p>
+    <pre><code>git push -u origin main</code></pre>
+
+    <h2>Step 7: Pull Changes from Remote</h2>
+    <p>If others are working on the project, or you are working from different locations, you need to pull the latest changes:</p>
+    <pre><code>git pull origin main</code></pre>
+
+    <h2>Step 8: Branching</h2>
+    <p>Branches allow you to work on new features separately from the main codebase.</p>
+    <ol>
+        <li><strong>Create a new branch</strong>:</li>
+        <pre><code>git branch &lt;branch-name&gt;</code></pre>
+        <p>For example:</p>
+        <pre><code>git branch feature-branch</code></pre>
+        <li><strong>Switch to the new branch</strong>:</li>
+        <pre><code>git checkout &lt;branch-name&gt;</code></pre>
+        <p>Or create and switch simultaneously:</p>
+        <pre><code>git checkout -b &lt;branch-name&gt;</code></pre>
+    </ol>
+
+    <h2>Step 9: Merge Branches</h2>
+    <p>When you finish working on a branch, you may want to merge it back into <code>main</code>.</p>
+    <ol>
+        <li><strong>Switch</strong> to the <code>main</code> branch:</li>
+        <pre><code>git checkout main</code></pre>
+        <li><strong>Merge</strong> the changes:</li>
+        <pre><code>git merge &lt;branch-name&gt;</code></pre>
+    </ol>
+
+    <h2>Step 10: Resolve Merge Conflicts (if any)</h2>
+    <p>Sometimes, merging branches can lead to conflicts. Git will prompt you to resolve these manually.</p>
+    <ol>
+        <li><strong>Open the conflicting files</strong> and decide how to merge the changes.</li>
+        <li>After resolving, <strong>add</strong> the file:</li>
+        <pre><code>git add &lt;filename&gt;</code></pre>
+        <li><strong>Commit</strong> the merge:</li>
+        <pre><code>git commit -m "Resolved merge conflict"</code></pre>
+    </ol>
+
+    <h2>Common Commands Summary</h2>
+    <ul>
+        <li><strong>View the status</strong> of your repository:</li>
+        <pre><code>git status</code></pre>
+        <li><strong>Add all changes</strong> to the staging area:</li>
+        <pre><code>git add .</code></pre>
+        <li><strong>Commit staged changes</strong>:</li>
+        <pre><code>git commit -m "Your message"</code></pre>
+        <li><strong>View commit history</strong>:</li>
+        <pre><code>git log</code></pre>
+        <li><strong>Push changes</strong> to the remote repository:</li>
+        <pre><code>git push origin &lt;branch-name&gt;</code></pre>
+        <li><strong>Pull changes</strong> from the remote repository:</li>
+        <pre><code>git pull origin &lt;branch-name&gt;</code></pre>
+    </ul>
+
+    <h2>Tips</h2>
+    <ul>
+        <li>Write <strong>meaningful commit messages</strong> that describe your changes clearly.</li>
+        <li><strong>Sync frequently</strong> using <code>git pull</code> to avoid conflicts.</li>
+        <li>Use <strong>branches</strong> for developing new features or experiments.</li>
+    </ul>
+
+    <p>Feel free to reach out if you have any questions or need further guidance! 😊</p>
+</body>
+</html>
+
