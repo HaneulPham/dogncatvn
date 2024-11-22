@@ -1,0 +1,39 @@
+/* General styles for the whole document */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Sets the font for the entire document */
+}
+
+/* Styles for the header */
+header {
+  background-color: #333; /* Sets the background color of the header to dark gray */
+  padding: 10px 0; /* Adds top and bottom padding inside the header */
+}
+
+/* Styles for the navigation menu */
+.nav-menu {
+  list-style-type: none; /* Removes bullet points from the list */
+  margin: 0; /* Removes any default margin */
+  padding: 0; /* Removes any default padding */
+  display: flex; /* Uses Flexbox to make the list items align horizontally */
+  justify-content: center; /* Aligns the items to the center of the container */
+}
+
+/* Styles for the individual list items inside the navigation menu */
+.nav-menu li {
+  margin: 0 15px; /* Adds space between each navigation item */
+}
+
+/* Styles for the links inside the list items */
+.nav-menu a {
+  color: #f2f2f2; /* Sets the text color to light gray */
+  text-decoration: none; /* Removes the underline from the links */
+  padding: 14px 20px; /* Adds padding inside each link, making them larger and easier to click */
+  display: block; /* Makes the link a block-level element, filling the entire list item */
+}
+
+/* Hover effect for links in the navigation menu */
+.nav-menu a:hover {
+  background-color: #575757; /* Changes the background color of the link when hovered */
+  border-radius: 4px; /* Rounds the corners slightly for the hover effect */
+}
