@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Summary</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif; /* Sets a clean, professional font style */
+            padding: 20px 80px; /* Adds padding to the top/bottom and more on the sides for balance */
+            max-width: 800px; /* Limits the width for better readability */
+            margin: 0 auto; /* Centers the content horizontally in the page */
+            position: relative;
+        }
+        .contact-container {
+            display: flex; /* Uses flex to arrange content in a row */
+            justify-content: space-between; /* Spaces out elements evenly across the container */
+            align-items: flex-start; /* Aligns items to the top */
+            margin-bottom: 40px; /* Adds space below the contact section */
+        }
+        .contact-info {
+            font-size: 1em; /* Sets font size for better readability */
+            line-height: 1.5; /* Adds space between lines for readability */
+        }
+        .contact-info strong {
+            font-weight: bold; /* Makes labels bold */
+            font-style: italic; /* Adds italic style to emphasize labels */
+        }
+        .name-title {
+            text-align: center; /* Centers the name text */
+            margin-top: 10px; /* Adds space above the name */
+            font-size: 1.5em; /* Increases font size for emphasis */
+            font-weight: bold; /* Makes the name bold */
+        }
+        .position-title {
+            text-align: center; /* Centers the position title */
+            font-size: 1.2em; /* Slightly smaller font size than the name */
+            color: #333; /* Sets a dark gray color for contrast */
+        }
+        .profile-picture {
+            margin-left: 20px; /* Adds space between the profile picture and the text */
+            border-radius: 8px; /* Rounds the corners of the picture for a softer look */
+        }
+        .summary-container {
+            margin-top: 40px; /* Adds space above the summary section */
+            padding-top: 20px; /* Adds padding at the top to separate content */
+            border-top: 2px solid #000; /* Adds a thick black line to separate this section */
+        }
+        .summary-title {
+            font-weight: bold; /* Makes the section title bold */
+            font-size: 1.5em; /* Sets a larger font size for emphasis */
+            text-transform: uppercase; /* Converts text to uppercase for emphasis */
+            margin-bottom: 10px; /* Adds space below the title */
+        }
+        .summary-text {
+            font-size: 1.1em; /* Sets a readable font size for the summary text */
+            line-height: 1.5; /* Adds space between lines for readability */
+        }
+        .technical-skills {
+            margin-top: 40px; /* Adds space above the technical skills section */
+            padding-top: 20px; /* Adds padding at the top for separation */
+            border-top: 1px solid #333; /* Adds a border at the top */
+            border-bottom: 1px solid #333; /* Adds a border at the bottom */
+        }
+        .skills-title {
+            font-weight: bold; /* Makes the skills title bold */
+            font-size: 1.5em; /* Sets a larger font size for emphasis */
+            text-transform: uppercase; /* Converts text to uppercase for emphasis */
+        }
+        .skills-list {
+            display: flex; /* Uses flexbox to arrange the skill labels and details side by side */
+            flex-direction: row; /* Arranges items in a row */
+            justify-content: space-between; /* Distributes space evenly between skill columns */
+            margin-top: 20px; /* Adds space above the skills list */
+        }
+        .skills-list ul {
+            list-style-type: none; /* Removes bullet points from the list */
+            padding: 0; /* Removes default padding */
+        }
+        .skills-list ul li {
+            font-weight: bold; /* Makes each skill label bold */
+            margin-bottom: 10px; /* Adds space below each item */
+        }
+        .skills-list .skills-details ul {
+            list-style-type: none; /* Removes bullet points from the skills details */
+            padding: 0; /* Removes default padding */
+        }
+        
+            font-weight: normal; /* Displays the text in normal weight */
+        }
+    </style>
+</head>
+<body>
+    <div class="contact-container">
+        <div>
+            <div class="contact-info">
+                <strong>Address:</strong> Le Thi Rieng Street, Ward Thoi An, District 12, HCMC<br>
+                <strong>Phone:</strong> (+84)978885202 <strong>E-mail:</strong> haneul.pham@gmail.com
+            </div>
+            <div class="name-title">Pham Thi Hang</div>
+            <div class="position-title">QA Manager</div>
+        </div>
+        <img src="profile_picture.jpg" alt="Pham Thi Hang" class="profile-picture" width="150">
+    </div>
+    <div class="summary-container">
+        <div class="summary-title">Professional Summary</div>
+        <div class="summary-text">
+            A highly skilled IT professional with over 11 years of experience in software testing and quality assurance. Expertise in SDLC, STLC, and Agile methodologies, with a strong focus on test automation, API testing, performance testing, and database querying. Demonstrated leadership abilities and a proven track record of delivering high-quality software solutions. Adept at collaborating with development teams to integrate quality throughout the software development lifecycle. Proficient in functional, regression, integration, system, and user acceptance testing (UAT), with a solid background in creating and executing test plans, test cases, and procedures. Highly motivated, detail-oriented, and versatile, with excellent problem-solving, analytical, and communication skills. Comfortable working independently or as part of a team in fast-paced, high-intensity environments.
+        </div>
+    </div>
+    <div class="technical-skills">
+        <div class="skills-title">Technical Skills</div>
+        <div class="skills-list">
+            <div class="skills-labels">
+                <ul>
+                    <li>Testing Techniques:</li>
+                    <li>Automation Testing:</li>
+                    <li>API Testing:</li>
+                    <li>Tools support testing:</li>
+                    <li>Databases:</li>
+                    <li>Programming Languages:</li>
+                    <li>Operating Systems:</li>
+                    <li>IDEs:</li>
+                    <li>Source control:</li>
+                    <li>Bug Tracking:</li>
+                </ul>
+            </div>
+            <div class="skills-details">
+                <ul>
+                    <li>Black-box, Sanity, Regression, Performance</li>
+                    <li>Selenium IDE & WebDriver, QTP, Appium</li>
+                    <li>Postman, JMeter, REST Assured</li>
+                    <li>Charles, Proxyman.io</li>
+                    <li>MySQL, SQL Server, PostgreSQL</li>
+                    <li>Java, C#, C++, JavaScript</li>
+                    <li>Windows, Mac OS X</li>
+                    <li>IntelliJ IDEA, MS Visual Studio, Eclipse</li>
+                    <li>SVN, Visual SourceSafe, GIT</li>
+                    <li>JIRA, Redmine, Bugzilla, TestLink</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
