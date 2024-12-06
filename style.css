@@ -25,33 +25,37 @@ body {
     text-align: center;
     margin-top: 20px;
 }
+
 .contact-info {
     font-size: 0.875em;
     line-height: 1.5;
     margin-bottom: 20px;
 }
+
 .contact-info strong {
     font-weight: bold;
     font-style: italic;
 }
+
 .name-title {
     text-align: center;
     margin-top: 20px;
     font-size: 0.875em;
     font-weight: bold;
 }
+
 /* .position-title {
-    text-align: center;
-    font-size: 0.875em;
-    color: #333;
+text-align: center;
+font-size: 0.875em;
+color: #333;
 } */
 /* .title-role {
-    padding-top: 0pt;
-    padding-bottom: 0pt;
-    line-height: 1.1500000000000001;
-    orphans: 2;
-    widows: 2;
-    text-align: center
+padding-top: 0pt;
+padding-bottom: 0pt;
+line-height: 1.1500000000000001;
+orphans: 2;
+widows: 2;
+text-align: center
 } */
 
 .name-title {
@@ -66,41 +70,47 @@ body {
     font-weight: 400;
     text-align: ;
 }
+
 /* .profile-picture {
-    position: absolute;
-    display: block;
-    margin: 20px auto;
-    border-radius: 8px;
-    margin-top: auto;
-    
+position: absolute;
+display: block;
+margin: 20px auto;
+border-radius: 8px;
+margin-top: auto;
+
 } */
 .profile-picture {
     float: right;
     margin: 0 0 20px 20px;
     border-radius: 8px;
 }
+
 .profile-picture::before {
     top: 0px;
     margin: 0 0 20px 20px;
     border-radius: 8px;
 }
+
 .contact-info::before {
     content: "";
     flex: 1;
     border-bottom: 2px solid #5B8DBC;
     margin: 0 10px;
 }
+
 .name-title::before {
     padding: 0pt;
     font-size: 14pt;
     font-family: "Trebuchet MS";
     font-weight: 700
 }
+
 /* Profresional summary title */
 .summary-container {
     padding: 20px;
     text-align: center;
 }
+
 .summary-title {
     color: #5B8DBC;
     font-weight: bold;
@@ -111,18 +121,22 @@ body {
     align-items: center;
     justify-content: center;
 }
-.summary-title::before, .summary-title::after {
+
+.summary-title::before,
+.summary-title::after {
     content: "";
     flex: 1;
     border-bottom: 2px solid #5B8DBC;
     margin: 0 10px;
 }
+
 .summary-text {
     margin-top: 10px;
     font-size: 1.1em;
     line-height: 1.5;
     text-align: left;
 }
+
 /* h1 is */
 h1 {
     font-size: 2.5em;
