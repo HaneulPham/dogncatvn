@@ -1,0 +1,249 @@
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+/*Contact information*/
+.contact-container {
+    text-align: center;
+    margin-top: 20px;
+}
+.contact-info {
+    font-size: 0.875em;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+.contact-info strong {
+    font-weight: bold;
+    font-style: italic;
+}
+.name-title {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 0.875em;
+    font-weight: bold;
+}
+/* .position-title {
+    text-align: center;
+    font-size: 0.875em;
+    color: #333;
+} */
+/* .title-role {
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.1500000000000001;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+} */
+
+.name-title {
+    font-size: 14pt;
+    font-family: "Trebuchet MS";
+    font-weight: 700
+}
+
+.position-title {
+    font-size: 0.875em;
+    font-family: "Trebuchet MS";
+    font-weight: 400;
+    text-align: ;
+}
+/* .profile-picture {
+    position: absolute;
+    display: block;
+    margin: 20px auto;
+    border-radius: 8px;
+    margin-top: auto;
+    
+} */
+.profile-picture {
+    float: right;
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+}
+.profile-picture::before {
+    top: 0px;
+    margin: 0 0 20px 20px;
+    border-radius: 8px;
+}
+.contact-info::before {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #5B8DBC;
+    margin: 0 10px;
+}
+.name-title::before {
+    padding: 0pt;
+    font-size: 14pt;
+    font-family: "Trebuchet MS";
+    font-weight: 700
+}
+/* Profresional summary title */
+.summary-container {
+    padding: 20px;
+    text-align: center;
+}
+.summary-title {
+    color: #5B8DBC;
+    font-weight: bold;
+    font-size: 1em;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.summary-title::before, .summary-title::after {
+    content: "";
+    flex: 1;
+    border-bottom: 2px solid #5B8DBC;
+    margin: 0 10px;
+}
+.summary-text {
+    margin-top: 10px;
+    font-size: 1.1em;
+    line-height: 1.5;
+    text-align: left;
+}
+/* h1 is */
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: #333;
+    padding-top: 0pt;
+    padding-bottom: 0pt;
+    line-height: 1.1500000000000001;
+    orphans: 2;
+    widows: 2;
+    text-align: center
+}
+
+h2 {
+    font-size: 1.8em;
+    color: #666;
+    margin-top: 0;
+}
+
+h3 {
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+    margin-top: 40px;
+}
+
+h4 {
+    font-size: 1.2em;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+ul {
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+li {
+    margin-bottom: 10px;
+}
+
+p {
+    margin: 0;
+    color: #000000;
+    font-size: 11pt;
+    font-family: "Arial"
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.section {
+    margin-top: 20px;
+}
+
+.job,
+.project {
+    margin-bottom: 30px;
+    padding-left: 10px;
+    border-left: 3px solid #007bff;
+}
+
+.additional-skills ul,
+.achievements ul,
+.development ul {
+    list-style-type: circle;
+}
+
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #333;
+    color: #f4f4f4;
+}
+
+body.dark-mode a {
+    color: #66b3ff;
+}
+
+.container.dark-mode {
+    background: #444;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+}
+
+/* Button styling for dark mode toggle */
+#dark-mode-toggle {
+    cursor: pointer;
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    transition: background-color 0.3s;
+}
+
+#dark-mode-toggle:hover {
+    background-color: #0056b3;
+}
+
+/* Active section navigation styling */
+nav a.active {
+    font-weight: bold;
+    color: #007bff;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+    .container {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    h2 {
+        font-size: 1.5em;
+    }
+}
